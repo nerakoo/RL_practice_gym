@@ -4,7 +4,8 @@ import gym
 import numpy as np
 
 if __name__ == "__main__":
-    MasterNode = torch.load('DA2C.model')
+    # MasterNode = torch.load('DA2C.model')
+    MasterNode = torch.load('DA2C_N_step.model')
     env = gym.make("CartPole-v1")
     env.reset()
     done = False
